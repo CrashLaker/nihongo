@@ -25,9 +25,9 @@ In getTable() function one is able to manage four settings:
 
 By default this will print a table chart with katakana characters sorted hidden and colored (blue for katakana, red for hiragana):
 
-getTable("katakana"); // print katanaka table
-getTable("hiragana"); // print hiragana table
-----------------------
+    getTable("katakana"); // print katanaka table
+    getTable("hiragana"); // print hiragana table
+
 
 
 Change its settings to suit your needs!
