@@ -26,10 +26,10 @@ getTable("hiragana", "random", "hide");
 
 echo "<div style='clear:both;'></div>";
 
-getTable("hiragana", "sort", "show");
-getTable("katakana", "sort", "show");
-getTable("hiragana", "sort", "hide");
-getTable("katakana", "sort", "hide");
+getTable("hiragana", "random", "hide");
+getTable("katakana", "random", "hide");
+getTable("hiragana", "random", "hide");
+getTable("katakana", "random", "hide");
 
 
 echo "</div>";
