@@ -11,11 +11,14 @@
 <?php
 
 
+echo "<div id='container'>";
+getTable("hiragana", "show", 1);
+getTable("hiragana", 0, 1);
+getTable("hiragana", 0, 1);
+getTable("hiragana", 0, 1);
 
-getTable("hiragana", 1);
 
-
-
+echo "</div>";
 
 
 
@@ -24,10 +27,15 @@ getTable("hiragana", 1);
 
 /**
  * 1 - "hiragana" || "katakana"
- * 2 - 1 = Random || 0 = Sort
- * 3 - 1 = Show values || 0 = Hidden values
+ * 2 - "random" = Random || "sort" = Sort
+ * 3 - "show" = Show values || "hide" = Hidden values
+ * 4 - "color" = Show colors || "black" = Black color
  */
-function getTable($alpha, $random = 0, $values = 0, $color = 1){
+function getTable($alpha, $random = "sort", $values = "hide", $color = "color"){
+    $random = ($random == "sort") ? 0 : 1;
+    $values = ($values == "hide") ? 0 : 1;
+    $color = ($color == "black") ? 0 : 1;
+    
     $rvowels = explode(", ", "a, i, u, e, o");
     $rconsonants = explode(", ", "-, k, s, t, n, h, m, y, w, r, n*");
     
