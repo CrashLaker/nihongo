@@ -8,7 +8,7 @@
       \_____|_|  \__,_|___/_| |_|______\__,_|_|\_\___|_|   
 
 
-# ${1:Nihongo}
+# {1:Nihongo}
 Hi there! Welcome to my coding.
 
 This one is a project for japanese learners to practice their hiragana and katakana skills.
