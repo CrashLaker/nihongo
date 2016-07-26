@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8"/>
     <style type="text/css">
-        table{border-collapse:collapse;}
+        table{float:left;border-collapse:collapse;}
         td{width:25px; height:25px;border:1px solid black !important; vertical-align:middle; text-align:center;}
         
     </style>
@@ -12,10 +12,24 @@
 
 
 echo "<div id='container'>";
-getTable("hiragana", "show", 1);
-getTable("hiragana", 0, 1);
-getTable("hiragana", 0, 1);
-getTable("hiragana", 0, 1);
+getTable("hiragana", "sort", "show");
+getTable("katakana", "sort", "show");
+getTable("hiragana", "sort", "hide");
+getTable("katakana", "sort", "hide");
+
+echo "<div style='clear:both;'></div>";
+
+getTable("katakana", "random", "hide");
+getTable("hiragana", "random", "hide");
+getTable("katakana", "random", "hide");
+getTable("hiragana", "random", "hide");
+
+echo "<div style='clear:both;'></div>";
+
+getTable("hiragana", "sort", "show");
+getTable("katakana", "sort", "show");
+getTable("hiragana", "sort", "hide");
+getTable("katakana", "sort", "hide");
 
 
 echo "</div>";
@@ -42,8 +56,10 @@ function getTable($alpha, $random = "sort", $values = "hide", $color = "color"){
     $vowels = explode(", ", "a, i, u, e, o");
     $consonants = explode(", ", "-, k, s, t, n, h, m, y, w, r, n*");
     
-    $hiragana = mbStringToArray("あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもや　ゆ　よわ　　　をらりるれろん　　　　");
-    $katakana = mbStringToArray("アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤ　ユ　ヨワ　　　ヲラリルレロン　　　　");
+    $hiragana = mbStringToArray("あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもや-ゆ-よわ---をらりるれろん----");
+    $katakana = mbStringToArray("アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤ-ユ-ヨワ---ヲラリルレロン----");
+    
+    $use = $$alpha;
     
     if ($color) $color = ($alpha == "hiragana") ? "red" : "blue";
     
@@ -65,9 +81,9 @@ function getTable($alpha, $random = "sort", $values = "hide", $color = "color"){
         foreach($vowels as $key2=>$value2){
             echo "<td>";
             if ($values){
-                echo $hiragana[array_search($value, $rconsonants)*count($vowels) + array_search($value2, $rvowels)];
+                echo $use[array_search($value, $rconsonants)*count($vowels) + array_search($value2, $rvowels)];
             }else{
-                echo ($hiragana[array_search($value, $rconsonants)*count($vowels) + array_search($value2, $rvowels)] == "　") ? "-" : "";
+                echo ($use[array_search($value, $rconsonants)*count($vowels) + array_search($value2, $rvowels)] == "-") ? "-" : "";
             }
             echo "</td>";
         }
