@@ -23,8 +23,11 @@ In getTable() function one is able to manage four settings:
  * 3 - "show" = Show values || "hide" = Hidden values
  * 4 - "color" = Show colors || "black" = Black color
 
-By default this will print a table chart with katakana characters sorted hidden and colored (blue for katakana, red for hiragana)
+By default this will print a table chart with katakana characters sorted hidden and colored (blue for katakana, red for hiragana):
+
 getTable("katakana"); // print katanaka table
 getTable("hiragana"); // print hiragana table
+----------------------
+
 
 Change its settings to suit your needs!
