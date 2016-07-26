@@ -1,31 +1,26 @@
+   _____               _     _           _             
+  / ____|             | |   | |         | |            
+ | |     _ __ __ _ ___| |__ | |     __ _| | _____ _ __ 
+ | |    | '__/ _` / __| '_ \| |    / _` | |/ / _ \ '__|
+ | |____| | | (_| \__ \ | | | |___| (_| |   <  __/ |   
+  \_____|_|  \__,_|___/_| |_|______\__,_|_|\_\___|_|   
+                                                       
+                                                       
+                                                       
+Hi there! Welcome to my coding.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This one is a project for japanese learners to practice their hiragana and katakana skills.
 
+Enjoy!
 
-Hi there! Welcome to Cloud9 IDE!
+In getTable() function one is able to manage four settings:
+ * 1 - "hiragana" || "katakana"
+ * 2 - "random" = Random || "sort" = Sort
+ * 3 - "show" = Show values || "hide" = Hidden values
+ * 4 - "color" = Show colors || "black" = Black color
 
-To get you started, we have created a small hello world application.
+By default this will print a table chart with katakana characters sorted hidden and colored (blue for katakana, red for hiragana)
+getTable("katakana"); // print katanaka table
+getTable("hiragana"); // print hiragana table
 
-1) Open the hello-world.php file
-
-2) Follow the run instructions in the file's comments
-
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-# nihongo
+Change its settings to suit your needs!
