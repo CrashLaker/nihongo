@@ -39,7 +39,7 @@ getTable("katakana", "random", "hide");
 
 echo "</div>";
 
-
+?>
 
 
 
