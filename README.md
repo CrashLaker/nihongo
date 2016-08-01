@@ -13,8 +13,6 @@ Hi there! Welcome to my coding.
 
 This one is a project for japanese learners to practice their hiragana and katakana skills.
 
-[Demo here](https://nihongo-crashlaker.c9users.io/)
-
 Enjoy!
 
 
